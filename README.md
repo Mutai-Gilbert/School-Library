@@ -69,7 +69,7 @@ git clone https://github.com/Mutai-Gilbert/School-Library.git && cd School_Libra
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Caleb Nwaizu**
+👤 **Gilbert Mutai**
 
 - GitHub: [@githubhandle](https://github.com/mutai-gilbert/)
 
