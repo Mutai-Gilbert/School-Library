@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './person_class'
 class Student < Person
   def initialize(_name, age, _parent_permission, classroom)
