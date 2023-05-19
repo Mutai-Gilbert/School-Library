@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Person < Nameable
   attr_accessor :name, :age
   attr_reader :id
