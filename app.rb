@@ -10,7 +10,6 @@ $students_list = []
 $teachers_list = []
 $books_list = []
 
-
 def list_all_books
   return unless defined?($books_list)
 
@@ -97,4 +96,4 @@ def choose_option(option)
     send(value) if op == option.to_i
   end
 end
-# rubocop:disable Style/GlobalVars
+# rubocop:enable Style/GlobalVars
