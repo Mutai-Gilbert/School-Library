@@ -74,14 +74,17 @@ class Library
   end
 
   def choose_option(option)
-    case option.to_i
-    when 1 then list_all_books
-    when 2 then list_all_people
-    when 3 then create_a_person
-    when 4 then create_a_book
-    when 5 then create_a_rental
-    when 6 then list_all_rentals
-    when 7 then exit_action
+    all_options = {
+      1 => :list_all_books,
+      2 => :list_all_people,
+      3 => :create_a_person,
+      4 => :create_a_book,
+      5 => :create_a_rental,
+      6 => :list_all_rentals,
+      7 => :exit_action
+    }
+    all_options.each do |op, value|
+      send(value) if op == option.to_i
     end
   end
 end
