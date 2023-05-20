@@ -3,7 +3,6 @@ require_relative './student'
 require_relative './teacher'
 require_relative './rental'
 
-# rubocop:disable Style/GlobalVars
 $person_list = []
 $rentals_list = []
 $students_list = []
@@ -30,7 +29,7 @@ def list_all_people
   end
 end
 
-def create_student(age, name, _specialization, classroom)
+def create_student(age, name, parent_permission, classroom)
   student = Student.new(age, name, parent_permission, classroom)
   return unless student.is_a?(Person)
 
@@ -96,4 +95,3 @@ def choose_option(option)
     send(value) if op == option.to_i
   end
 end
-# rubocop:enable Style/GlobalVars
