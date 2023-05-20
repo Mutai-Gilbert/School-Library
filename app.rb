@@ -3,14 +3,17 @@ require_relative './student'
 require_relative './teacher'
 require_relative './rental'
 
-$book_list = []
 $person_list = []
 $rentals_list = []
+$students_list = []
+$teachers_list = []
+$books_list = []
+
 
 def list_all_books
-  return unless defined?($book_list)
+  return unless defined?($books_list)
 
-  $book_list.each do |book|
+  $books_list.each do |book|
     puts "[Book] Title: #{book.title} Author: #{book.author}"
   end
 end
@@ -48,7 +51,7 @@ def create_a_book(title, author)
 
   return unless books.is_a?(Book)
 
-  $book_list << books
+  $books_list << books
   puts 'Book created sucessfully'
 end
 
@@ -64,7 +67,7 @@ end
 
 def list_all_rentals(id)
   $person_list.each do |person|
-    if person.id === id
+    if person.id == id
       person.rentals.each do |rental|
         puts "[Rental] Date: #{rental.date}, Title: #{rental.book.title} Author: #{rental.book.author}"
       end
