@@ -25,4 +25,8 @@ class Person < Nameable
   def of_age?
     `@age >= 18`
   end
+
+  def add_rental(date, book)
+    Rental.new(date, self, book)
+  end
 end
