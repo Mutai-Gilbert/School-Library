@@ -3,6 +3,7 @@ require_relative './student'
 require_relative './teacher'
 require_relative './rental'
 
+# rubocop:disable Style/GlobalVars
 $person_list = []
 $rentals_list = []
 $students_list = []
@@ -96,3 +97,4 @@ def choose_option(option)
     send(value) if op == option.to_i
   end
 end
+# rubocop:disable Style/GlobalVars
