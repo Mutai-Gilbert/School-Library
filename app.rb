@@ -28,34 +28,34 @@ class Library
 
   def create_student(age, name, parent_permission, classroom)
     student = Student.new(age, name, parent_permission, classroom)
-    if student.is_a?(Person)
-      @person_list << student
-      puts "Student created successfully \n\n"
-    end
+    return unless student.is_a?(Person)
+
+    @person_list << student
+    puts "Student created successfully \n\n"
   end
 
   def create_teacher(age, name, specialization)
     teacher = Teacher.new(age, name, nil, specialization)
-    if teacher.is_a?(Person)
-      @person_list << teacher
-      puts "Teacher created successfully \n\n"
-    end
+    return unless teacher.is_a?(Person)
+
+    @person_list << teacher
+    puts "Teacher created successfully \n\n"
   end
 
   def create_a_book(title, author)
     book = Book.new(title, author)
-    if book.is_a?(Book)
-      @books_list << book
-      puts 'Book created successfully'
-    end
+    return unless book.is_a?(Book)
+
+    @books_list << book
+    puts 'Book created successfully'
   end
 
   def create_rental(date, person, book)
     rental = Rental.new(date, person, book)
-    if rental.is_a?(Rental)
-      @rentals_list << rental
-      puts 'Rental created successfully'
-    end
+    return unless rental.is_a?(Rental)
+
+    @rentals_list << rental
+    puts 'Rental created successfully'
   end
 
   def list_all_rentals(id)
