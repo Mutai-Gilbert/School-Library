@@ -22,7 +22,6 @@ def create_a_person
   main
 end
 
-# rubocop:disable Style/GlobalVars
 def create_a_book
   print 'Title: '
   title = gets.chomp
@@ -81,4 +80,3 @@ def main
 end
 
 main
-# rubocop:enable Style/GlobalVars
