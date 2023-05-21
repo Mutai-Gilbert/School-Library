@@ -66,7 +66,7 @@ git clone https://github.com/Mutai-Gilbert/School-Library.git && cd School_Libra
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 
 👤 **Gilbert Mutai**
@@ -88,7 +88,7 @@ git clone https://github.com/Mutai-Gilbert/School-Library.git && cd School_Libra
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Mutai-Gilbert/Vet-Clinic-Database/issues).
+Feel free to check the [issues page]((https://github.com/Mutai-Gilbert/School-Library/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
