@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './nameable'
 require './rental'
 require_relative './book'
@@ -15,7 +17,7 @@ class Person < Nameable
   end
 
   def can_use_services?
-    return false unless of_age? || parent_permission
+    of_age? || parent_permission
   end
 
   def correct_name
@@ -25,7 +27,7 @@ class Person < Nameable
   private
 
   def of_age?
-    return false unless @age >= 18
+    @age >= 18
   end
 
   def add_rental(date, book)
